@@ -3,9 +3,12 @@ import openai
 import yagmail
 import os
 from dotenv import load_dotenv
+import requests
+from bs4 import BeautifulSoup
+import mysql.connector
 
 load_dotenv()
-p
+
 app = Flask(__name__)
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
